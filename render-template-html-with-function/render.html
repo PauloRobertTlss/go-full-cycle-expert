@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My email</title>
+</head>
+<body>
+        <table>
+            <thead>
+                <th>cep</th>
+                <th>url</th>
+            </thead>
+            <tbody>
+            {{  range . }}
+            <tr>
+                <td>{{ .Numero }}</td>
+                <td>{{ .Url | ToUpper}}</td>
+            </tr>
+            {{ end }}
+            </tbody>
+        </table>
+
+
+</body>
+</html>
